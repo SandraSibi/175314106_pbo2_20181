@@ -22,5 +22,63 @@ public class Pasien {
     public Pasien(){
 
     }
+
+    public String getNoRekamMedis() {
+        return noRekamMedis;
+    }
+
+    public void setNoRekamMedis(String noRekamMedis) {
+        this.noRekamMedis = noRekamMedis;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return Alamat;
+    }
+
+    public void setAlamat(String Alamat) {
+        this.Alamat = Alamat;
+    }
+
+    public String getTempatLahir() {
+        return tempatLahir;
+    }
+
+    public void setTempatLahir(String tempatLahir) {
+        this.tempatLahir = tempatLahir;
+    }
+
+    public int getTanggalLhair() {
+        return tanggalLhair;
+    }
+
+    public void setTanggalLhair(int tanggalLhair) {
+        this.tanggalLhair = tanggalLhair;
+    }
+
+    public int getBulanLahir() {
+        return bulanLahir;
+    }
+
+    public void setBulanLahir(int bulanLahir) {
+        this.bulanLahir = bulanLahir;
+    }
+
+    public int getTahunLahir() {
+        return tahunLahir;
+    }
+
+    public void setTahunLahir(int tahunLahir) {
+        this.tahunLahir = tahunLahir;
+    }
+    
+    
 }
 
