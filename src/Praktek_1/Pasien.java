@@ -10,8 +10,13 @@ package Praktek_1;
  * @author admin
  */
 public class Pasien {
+    private String noRekamMedis;
     private String nama;
-    private String Almat;
+    private String Alamat;
+    private String tempatLahir;
+    private int tanggalLhair;
+    private int bulanLahir;
+    private int tahunLahir;
     
     
     public Pasien(){
