@@ -11,6 +11,7 @@ package Praktek_1;
  */
 public class Pasien {
     private String nama;
+    private String Almat;
     
     
     public Pasien(){
