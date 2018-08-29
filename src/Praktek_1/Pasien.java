@@ -10,12 +10,11 @@ package Praktek_1;
  * @author admin
  */
 public class Pasien {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-     
-    }
+    private String nama;
     
+    
+    public Pasien(){
+
+    }
 }
+
