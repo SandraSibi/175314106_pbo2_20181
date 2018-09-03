@@ -79,6 +79,8 @@ public class Pasien {
         this.tahunLahir = tahunLahir;
     }
     
-    
+    public void setantri(int tahunLahir) {
+        this.tahunLahir = tahunLahir;
+}
 }
 

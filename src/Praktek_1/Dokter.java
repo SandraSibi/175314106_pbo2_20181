@@ -25,7 +25,7 @@ public class Dokter {
     }
 
     public String getNama() {
-        return nama;
+        return nama; 
     }
 
     public void setNama(String nama) {
