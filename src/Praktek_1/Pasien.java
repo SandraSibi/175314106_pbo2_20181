@@ -27,6 +27,8 @@ public class Pasien {
         // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
+    
+
     public void setNoRekamMedis(int noRekamMedis) throws Exception{
         if (noRekamMedis >= 6  &&  noRekamMedis <= 20) {
             this.noRekamMedis = noRekamMedis;
