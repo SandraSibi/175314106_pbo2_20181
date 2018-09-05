@@ -12,7 +12,7 @@ package Praktek_1;
 public class AntrianPasien{
    private int tanggalAntrian;
    private int bulanAntrian;
-   private int tahunAntrian;
+   private int TahunAntrian;
     private Klinik klinik ;
     private Pasien daftarPasien[];
      //  masukan variabel yang dibutuhkan di dalam kelas AntrianPasien , variable bersifat private karena hanya dibutuhkan dan hanya bisa diakses di dalam kelas AntrianPasien saja
@@ -42,13 +42,13 @@ public class AntrianPasien{
     }
 
     public int getTahunAntrian() {
-        return tahunAntrian;
+        return TahunAntrian;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
     public void setTahunAntrian(int tahunAntrian) {
-        this.tahunAntrian = tahunAntrian;
+        this.TahunAntrian = tahunAntrian;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
