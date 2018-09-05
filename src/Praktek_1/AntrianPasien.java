@@ -7,76 +7,78 @@ package Praktek_1;
 
 /**
  *
- * @author admin
+ * @author SandraPc
  */
-public class Dokter {
-      private String nomorPegawai;
-    private String nama;
-    private String alamat;
-    private String temptLahir;
-    private int tanggalLahir;
-     //  masukan variabel yang dibutuhkan di dalam kelas Dokter , variable bersifat private karena hanya dibutuhkan dan hanya bisa diakses di dalam kelas Dokter saja
+public class AntrianPasien{
+   private int tanggalAntrian;
+   private int bulanAntrian;
+   private int tahunAntrian;
+    private Klinik klinik ;
+    private Pasien daftarPasien[];
+     //  masukan variabel yang dibutuhkan di dalam kelas AntrianPasien , variable bersifat private karena hanya dibutuhkan dan hanya bisa diakses di dalam kelas AntrianPasien saja
 
-    public String getNomorPegawai() {
-        return nomorPegawai;
+    public int getTanggalAntrian() {
+        return tanggalAntrian;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
-    public void setNomorPegawai(String nomorPegawai) {
-        this.nomorPegawai = nomorPegawai;
+    public void setTanggalAntrian(int tanggalAntrian) {
+        this.tanggalAntrian = tanggalAntrian;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
 
-    public String getNama() {
-        return nama; 
+    public int getBulanAntrian() {
+        return bulanAntrian;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setBulanAntrian(int bulanAntrian) {
+        this.bulanAntrian = bulanAntrian;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
 
-    public String getAlamat() {
-        return alamat;
+    public int getTahunAntrian() {
+        return tahunAntrian;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setTahunAntrian(int tahunAntrian) {
+        this.tahunAntrian = tahunAntrian;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
 
-    public String getTemptLahir() {
-        return temptLahir;
+    public Klinik getKlinik() {
+        return klinik;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
-    public void setTemptLahir(String temptLahir) {
-        this.temptLahir = temptLahir;
+    public void setKlinik(Klinik klinik) {
+        this.klinik = klinik;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
 
-    public int getTanggalLahir() {
-        return tanggalLahir;
+    public Pasien[] getDaftarPasien() {
+        return daftarPasien;
         
             // data get untuk membaca nilai balikan dan menampilkan nilai dari method tersebut
     }
 
-    public void setTanggalLahir(int tanggalLahir) {
-        this.tanggalLahir = tanggalLahir;
+    public void setDaftarPasien(Pasien[] daftarPasien) {
+        this.daftarPasien = daftarPasien;
         
         //  data set untuk menampilkan data yang terdapat di kelas tersebut, this menunjukkan variabel = parameter di dalam method  
     }
- 
- 
+    
+    
+    
+   
     
 }
