@@ -6,7 +6,7 @@
 package TestView;
 
 
-import Model.Pasien;
+import Model.Pasien2;
 import View.TambahPasienBaruDialog;
 
 /**
@@ -15,7 +15,7 @@ import View.TambahPasienBaruDialog;
  */
 public class TestPasien {
      public static void main(String[] args) {
-        Pasien test = new Pasien(
+        Pasien2 test = new Pasien2(
         "Puspa", // nama pasien
                 "Klaten", // alamat
                 "Medan", // tempat lahir
@@ -25,7 +25,7 @@ public class TestPasien {
                 1974, // tahun lahir
                 74829 );
         
-        Pasien test1 = new Pasien(
+        Pasien2 test1 = new Pasien2(
                  "Budi", // nama pasien
                  "Klaten", // alamat
                  "Klaten", // tempat lahir
@@ -38,14 +38,14 @@ public class TestPasien {
         
        
         
-        Pasien.tambahPasienBaru(test);
-        Pasien.tambahPasienBaru(test1);
+        Pasien2.tambahPasienBaru(test);
+        Pasien2.tambahPasienBaru(test1);
         
-        for (int i = 0; i < Pasien.daftarPasienKlinik.size(); i++) {
-            System.out.println("Nama : "+Pasien.daftarPasienKlinik.get(i).getNama());
+        for (int i = 0; i < Pasien2.daftar.size(); i++) {
+            System.out.println("Nama : "+Pasien2.daftar.get(i).getNama());
         }
         
-        Pasien cari = Pasien.cariPasien(19990110);
+        Pasien2 cari = Pasien2.cariPasien(19990110);
         System.out.println("Nama Hasil Pencarian = "+cari.getNama());
     }
 }

@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author admin
  */
-public class Pasien extends AntrianPasien {
+public class Pasien2 extends AntrianPasien {
 
     private String nama;
     private String alamat;
@@ -30,9 +30,9 @@ public class Pasien extends AntrianPasien {
     private String NIK;
     private int noRekmedis;
 
-    public static ArrayList<Pasien> daftarPasienKlinik = new ArrayList<Pasien>();
+    public static ArrayList<Pasien2> daftar = new ArrayList<Pasien2>();
 
-public Pasien(String nama, String almt, String tmptLahir, String nik, int tglLahir, int blnLahir, int thnLahir) {
+    public Pasien2(String nama, String almt, String tmptLahir, String nik, int tglLahir, int blnLahir, int thnLahir, int noRekMedis) {
         this.nama = nama;
         this.alamat = almt;
         this.tempatLahir = tmptLahir;
@@ -40,17 +40,21 @@ public Pasien(String nama, String almt, String tmptLahir, String nik, int tglLah
         this.bulanLahir = blnLahir;
         this.tahunLahir = thnLahir;
         this.NIK = nik;
+        this.noRekmedis = noRekMedis;
     }
-public static void tambahPasienBaru( Pasien pasien){
-    pasien.daftarPasienKlinik.add(pasien);
-}
-public static Pasien cariPasien(int noRekMedis){
-    return  null;
-    
-}
-public Pasien() {
 
-}
+    public static void tambahPasienBaru(Pasien2 pasien) {
+        pasien.daftar.add(pasien);
+    }
+
+    public static Pasien2 cariPasien(int noRekMedis) {
+        return null;
+
+    }
+
+    public Pasien2() {
+
+    }
 
     public void setNoRekmedis(int noRekmedis) throws NumberFormatException {
         if (noRekmedis < 28 && noRekmedis > 2) {
@@ -99,7 +103,7 @@ public Pasien() {
             throw new Exception("salah");
         }
     }
-
+     
     public int getTanggalLahir() {
         return tanggalLahir;
     }
@@ -111,7 +115,6 @@ public Pasien() {
             throw new Exception(" Tahun Lahir Anda Tidak Terdeteksi ");
         }
     }
-  
 
     public String getTempatLahir() {
         return tempatLahir;
@@ -132,38 +135,29 @@ public Pasien() {
     public int getNoRekmedis() {
         return noRekmedis;
     }
-    
-    public Pasien cariPasien(String NORM){
+
+    public Pasien2 cariPasien(String NORM) {
         return null;
     }
-    public static void simpanDaftarPasien(File file){
+
+    public static void simpanDaftarPasien(File file) {
         try {
             FileOutputStream fos = new FileOutputStream(file);
-            for (int i = 0; i < daftarPasienKlinik.size(); i++) {
-              String data = daftarPasienKlinik.get(i).toString();
-              fos.write(data.getBytes());
-                      
+            for (int i = 0; i < daftar.size(); i++) {
+                String data = daftarPasienKlinik.get(i).toString();
+                fos.write(data.getBytes());
+
             }
             fos.close();
-        } catch ( FileNotFoundException ex) {
-            Logger.getLogger(Pasien.class.getName()).log(Level.SEVERE,null,ex);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Pasien2.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(Pasien.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Pasien2.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public static void bacaDaftarPasien(File file){
-        throw new UnsupportedOperationException("Not supported yet");
-    
+
+    public String toString() {
+        return noRekmedis + "\t" + nama + "\t" + alamat + "\n";
     }
-    public String toString(){
-        return noRekmedis+"\t"+nama+"\t"+alamat+"\n";
+
 }
-
-    Object getNoRM() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    }
-
-    
-  
-

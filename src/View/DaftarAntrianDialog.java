@@ -6,7 +6,7 @@
 package View;
 
 
-import Model.Pasien;
+import Model.Pasien2;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -145,11 +145,11 @@ public class DaftarAntrianDialog extends JDialog implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == tambahButton) {
-            Pasien baru = new Pasien();
+            Pasien2 baru = new Pasien2();
             baru.setNama(namaText.getText());
             baru.setAlamat(alamatText.getText());
             
-            Pasien.tambahPasienBaru(baru);
+            Pasien2.tambahPasienBaru(baru);
             
             
         }

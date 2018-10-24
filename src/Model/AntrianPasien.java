@@ -14,12 +14,12 @@ public class AntrianPasien{
    private int bulanAntrian;
    private int TahunAntrian;
    private Klinik klinik ;
-   private Pasien daftarPasien[];
+   private Pasien2 daftarPasien[];
    
    public AntrianPasien() {   }
    
 
-   public void mendaftar(Pasien pasien){
+   public void mendaftar(Pasien2 pasien){
       
 }
 
@@ -52,7 +52,7 @@ public class AntrianPasien{
         this.klinik = klinik;
     }
 
-    public void setDaftarPasien(Pasien[] daftarPasien) {
+    public void setDaftarPasien(Pasien2[] daftarPasien) {
         this.daftarPasien = daftarPasien;
     }
 
@@ -72,7 +72,7 @@ public class AntrianPasien{
         return klinik;
     }
 
-    public Pasien[] getDaftarPasien() {
+    public Pasien2[] getDaftarPasien() {
         return daftarPasien;
     }
     

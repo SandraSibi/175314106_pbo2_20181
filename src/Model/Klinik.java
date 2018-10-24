@@ -11,7 +11,7 @@ package Model;
  */
 class Klinik {
    private String idKlinik;
-    private String nama;
+    private String namaKlinik;
  
     public Klinik(){ }
     
@@ -22,12 +22,12 @@ class Klinik {
         this.idKlinik = idKlinik;
     }
 
-    public String getNama() {
-        return nama;
+    public String getNamaKlinik() {
+        return namaKlinik;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setNamaKlinik(String namaKlinik) {
+        this.namaKlinik = namaKlinik;
     }
     
     

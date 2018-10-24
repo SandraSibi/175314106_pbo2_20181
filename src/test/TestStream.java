@@ -5,7 +5,7 @@
  */
 package test;
 
-import Model.Pasien;
+import Model.Pasien2;
 import java.io.File;
 
 /**
@@ -15,22 +15,22 @@ import java.io.File;
 public class TestStream {
 
     public static void main(String[] args) {
-        Pasien test = new Pasien();
+        Pasien2 test = new Pasien2();
         test.setNama("puspa");
         test.setAlamat("klaten");
-        test.setNoRekmedis("001");
+        //test.setNoRekmedis("001");
 
-        Pasien test1 = new Pasien();
-        test1.setNoRekmedis("001");
+        Pasien2 test1 = new Pasien2();
+        //test1.setNoRekmedis("001");
         test1.setNama("adi");
         test1.setAlamat("klaten");
 
         System.out.println(test.toString());
         System.out.println(test1.toString());
 
-        Pasien.tambahPasienBaru(test);
-        Pasien.tambahPasienBaru(test1);
+        Pasien2.tambahPasienBaru(test);
+        Pasien2.tambahPasienBaru(test1);
 
-        Pasien.simpanDaftarPasien(new File("daftar.txt"));
+        Pasien2.simpanDaftarPasien(new File("daftar.txt"));
     }
 }
